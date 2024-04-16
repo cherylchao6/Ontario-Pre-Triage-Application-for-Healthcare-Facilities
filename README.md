@@ -1,5 +1,35 @@
 # Project: Ontario Pre-Triage Application for Healthcare Facilities
 
+## Introduction
+Through the development of the Ontario Pre-Triage Application for Healthcare Facilities, I have showcased a comprehensive range of C++ Object-Oriented Programming (OOP) capabilities. This application simulates the management of patient intake in a healthcare setting during a pandemic, emphasizing efficient, organized, and informative processes.
+
+## Demonstrated C++ OOP Capabilities
+
+### Encapsulation and Modular Design
+- Organized complex logic into classes and modules, encapsulating functionality and providing a clear API.
+- Managed the interdependencies of modules through carefully designed interfaces and class hierarchies.
+
+### Inheritance and Polymorphism
+- Implemented a base `Patient` class and derived specialized `TestPatient` and `TriagePatient` classes, showcasing inheritance and the use of polymorphic functions.
+- Utilized virtual functions and pure virtual functions to create a polymorphic interface that allows for flexible treatment of different patient types.
+
+### Dynamic Memory Management
+- Practiced dynamic memory allocation and deallocation to manage patient data effectively, ensuring no memory leaks and optimal resource use.
+- Designed classes that manage their own resources, following the Rule of Three, ensuring proper copy semantics for objects with dynamically allocated resources.
+
+### Function Overloading and Operator Overloading
+- Overloaded functions to provide customized behavior for patient registration and admission.
+- Implemented operator overloading to enhance code readability and provide intuitive ways to interact with objects (e.g., streaming operators for I/O, comparison operators for patient handling).
+
+### Template Programming
+- Employed template programming to create generic solutions for common operations, like dynamically removing elements from an array.
+
+### Exception Handling
+- Ensured robust error handling and validation, maintaining application stability and preventing invalid state propagation.
+
+### File I/O
+- Engineered the persistence layer, enabling the application to save and load patient data from files, utilizing file stream classes and error checking.
+
 ## Use case
 
  In the event of a pandemic, measures must be taken to prevent the spread of the contagion. healthcare facilitys are required to screen patients and separate those in need of contagion testing from others. This process must be conducted in an orderly manner, informing patients of the expected wait time and notifying them when they can be admitted.
