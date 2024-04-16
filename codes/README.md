@@ -1,25 +1,10 @@
 # Project: Ontario Pre-Triage Application for Healthcare Facilities
-## Current Project State
-- MS1 & MS2 release <br /> V1.2 Clarified the insertion and extraction operator overloads
-- MS3 & MS4 release<br />V1.1 MS4 (removed deprecated methods, `csvRead and csvWrite`)
-- MS5 release(V0.9 review)
-
-## Milestones
-
-|Milestone| Revision | Comments |
-|------|:---:|:----|
-| [MS1](#milestone-1) | V1.0 |  |
-| [MS2](#milestone-2) | V1.0 |    |
-| [MS3](#milestone-3) | V1.0  |    |
-| [MS4](#milestone-4) | V1.0  |   |
-| [MS5](#milestone-5) | V1.0 |   |
-
 
 ## Use case
 
  In the event of a pandemic, measures must be taken to prevent the spread of the contagion. healthcare facilitys are required to screen patients and separate those in need of contagion testing from others. This process must be conducted in an orderly manner, informing patients of the expected wait time and notifying them when they can be admitted.
 
-Your task is to assist in completing the implementation of the Pre-Triage application, which will be used in such scenarios.
+My task is to assist in completing the implementation of the Pre-Triage application, which will be used in such scenarios.
 
 ### The Pre-Triage Application
 The application starts by displaying a simple menu with three options:
@@ -31,7 +16,7 @@ Ontario Pre-Triage Application for Healthcare Facilities
 >
 ```
 #### Register
-The register option is selected to screen patients before getting into the healthcare facility. The user can select between a contagion Test or Triage.
+The register option is selected to screen patients before getting into the healthcare facility. The user can select betIen a contagion Test or Triage.
 
 Contagion test is selected if the patient is at the healthcare facility for a contagion Test. In this case, the patient's name and OHIP number is entered and then a ticket will be printed with a call number and estimated wait time for admission for the patient.
 
@@ -40,182 +25,6 @@ If Triage is selected then in addition to the patient's name and OHIP number, th
 #### Admit
 Admit is selected when the contagion Test area or the Triage section is ready to accept a patient. After selecting contagion or Triage, the patient with the next ticket in line will be called. Based on the time of the call, the average wait time for the next patient for that line up (contagion or Triage) will be updated.
 
-
-
-
-
-# Milestones
-
-|Milestone| Revision |Comments |
-|------|:---:|:----|
-| [MS1](#milestone-1) | V1.0 | |
-| [MS2](#milestone-2) | V1.0 | |
-| [MS3](#milestone-3) | V1.0 | |
-| [MS4](#milestone-4) | V1.0 |  |
-| [MS5](#milestone-5) | V1.0 |  |
-
-
-
-## Milestones due dates
-This project will be completed in five milestones, with each milestone having a specified due date. The due date for each milestone is determined based on the amount of work required to achieve it.
-
-To ensure successful completion of the project within the given timeframe, I recommend starting early and diligently meeting all the milestone due dates.
-
-> Remember: Early preparation and timely progress are key to project success. Best of luck with your project! 
-
-## Final project mark and due dates
-
-|Milestone| Mark | Due date | Submission Policy|
-|:------:|:---:|:---:|-------|
-| MS1 | 10% | Mar 13 | Mandatory to submit<br />gets full mark even if 1 week late. gets 0% afterwards, **Rejected After Apr 8th**|
-| MS2 | 10% | Mar 16 | Mandatory to submit<br />gets full mark even if 1 week late. gets 0% afterwards, **Rejected After Apr 8th**|
-| MS3 | 10% | Mar 24 | Mandatory to submit<br />gets full mark even if 1 week late. gets 0% afterwards, **Rejected After Apr 8th**|
-| MS4 | 10% | Mar 30 | Mandatory to submit<br />gets full mark even if 1 week late. gets 0% afterwards, **Rejected After Apr 8th**|
-| MS5 | 60% | See below| See below|
-
-### Milestone 5 submissions
-- **Due date**: Apr 8th
-- Project submission **rejection date**: Apr 13th 23:59
-- Late Submission Penalty: A 10% deduction per day will be applied for late submissions, up to a maximum of 5 days. After 5 days, the submission will receive a mark of zero.
-
-> To facilitate the final project submission and allow partial submissions, we have divided Milestone 5 into six smaller parts. Each submission contributes 10% to the overall project grade. Your project will be evaluated only if you have completed all four milestones and submitted at least one of the six parts for Milestone 5. 
-
-|Milestone 5<br/> Divided into<br/>Six submission| Description | Comments |
-|:------|:---|-------|
-| [m51](#milestone-51) | Load, Save and exit test | Mandatory, this is needed for the rest<br /> of the options to be functional|
-| [m52](#milestone-52) | List Patients in the lineup | Optional with 10% penalty |
-| [m53](#milestone-53) | Admit Test Patients | Optional with 10% penalty |
-| [m54](#milestone-54) | Admit Triage Patients | Optional with 10% penalty |
-| [m55](#milestone-55) | Register Test Patients | Optional with 10% penalty |
-| [m56](#milestone-56) | Register Triage Patients and Full lineup test | Optional with 10% penalty |
-
-
-#### Milestones 1 to 4: Success and Timely Submissions
-- The first four milestones will not be evaluated based on the code itself. Instead, their assessment will focus on success (meeting project objectives) and timely submissions. During these milestones, you have the flexibility to modify or debug your previous code as needed.
-- If you require any feedback on your first four milestones you need to ask your professor to do so.
-#### Milestone 5: Code Scrutiny
-- **Milestone** 5 is the critical phase where your code will be closely examined. Ensure that your implementation aligns with project requirements and best practices. 
-
-***NOTE:***<br/>
-**Your project will receive a mark of zero if any of the milestones are not submitted by [the rejection date](#milestone-5-submissions)<br />For your project to be marked, you must submit all the first 4 milestones and at least part 1 of the 6 submissions of Milestone 5**
-
-### Checking Due dates using the submitter program
-
-
-You can check the due date of each milestone using the ```-due``` flag in the submission command when the submissions are set up:
-```bash
-~profname.proflastname/submit 2??/prj/m? -due
-```
-- replace **2??** with the subject code
-- replace **m?** with the milestone number
-
-## Citation, Sources
-
-When submitting your work, all the files submitted should carry full student information along with the "citation and sources" information. See the following example:
-
-If you have multiple submissions of the same milestone, please update the Revision History in each submission so your professor knows what changes to look for.
-
-```c++
-/* Citation and Sources...
-Final Project Milestone ? 
-Module: Whatever
-Filename: Whatever.cpp
-Version 1.0
-Author   John Doe
-Revision History
------------------------------------------------------------
-Date      Reason
-2023/?/?  Preliminary release
-2023/?/?  Debugged DMA
------------------------------------------------------------
-I have done all the coding by myself and only copied the code 
-that my professor provided to complete my workshops and assignments.
------------------------------------------------------------
-OR
------------------------------------------------------------
-Write exactly which part of the code is given to you as help and 
-who gave it to you, or from what source you acquired it.
------------------------------------------------------------*/
-```
-
-**Failing to include the above citation to any of the files containing your work will cause the rejection of your project submission**
-
-## Compiling and Testing Your Program
-
-All your code should be compiled using this command on `matrix`:
-
-```bash
-g++ -Wall -std=c++11 -g -o ws file1.cpp file2.cpp ...
-```
-
-- `-Wall`: the compiler will report all warnings
-- `-std=c++11`: the code will be compiled using the c++11 standard
-- `-g`: the executable file will contain debugging symbols, allowing *valgrind* to create better reports
-- `-o ws`: the compiled application will be named `ws`
-
-After compiling and testing your code, run your program as follows to check for possible memory leaks (assuming your executable name is `ws`):
-
-```bash
-valgrind --show-error-list=yes --leak-check=full --show-leak-kinds=all --track-origins=yes ws
-```
-
-- `--show-error-list=yes`: show the list of detected errors
-- `--leak-check=full`: check for all types of memory problems
-- `--show-leak-kinds=all`: show all types of memory leaks identified (enabled by the previous flag)
-- `--track-origins=yes`: tracks the origin of uninitialized values (`g++` must use `-g` flag for compilation, so the information displayed here is meaningful).
-
-To check the output, use a program that can compare text files.  Search online for such a program for your platform, or use *diff* available on `matrix`.
-
-> All the code written in the project must be implemented in the **seneca** namespace.
-
-> Make sure that all the debugging code and debugging comments are removed before submission.
-
-## Project Implementation notes:  *Very Important, read carefully*
-
-### 1- Namespace Requirement:
-- All code written for this project must be within the seneca namespace.
-### 2- Flexibility in Adding Attributes and Methods:
-- You are encouraged to add any necessary attributes (member variables), functions, and methods (member functions) to complete your code.
-- If unsure about your strategy for adding functionalities and properties to your classes, seek advice from your professor.
-### 3- Private Methods:
-- If you add methods that are not called outside the scope of the class, ensure they are set as private.
-### 4- Naming Conventions:
-- Unless explicitly instructed otherwise, name variables and functions as you find fit.
-- Follow the naming conventions provided by your professor and subject notes
-- Meaningless or misleading names may result in penalties.
-### 5- Constant Member Functions:
-- When creating methods (member functions), set them as constant if they do not modify their class.
-### 6- Passing by Address or Reference:
-- When passing an object or variable by address or reference, use constant pointers and references if they are not meant to be modified.
-### 7- Empty State Consideration:
-- If an empty state is required for an object, it should be considered an “invalid” empty state.
-Objects in this state should be rendered unusable.
-### 8- Utils Module:
-- A module named Utils is included in the project.
-- If you don’t have custom functionalities, leave the Utils module as is.
-- You can add your own code to the Utils module, but do not modify existing functionalities provided for testing and system time retrieval purposes.
-### 9- Code Reuse:
-- You may reuse and copy any code provided by your professor in workshops or functions from previous work in this subject or other subjects.
-- Place such code in the Utils module as needed and cite it.
-### 10 - Display and Input Methods
-
-- For any class that requires a display or print functionality, the method should adhere to the following format, unless specified otherwise:
-   ```c++
-   ostream& displayMethod(ostream& ostr = cout) const;
-   ```
-   This displayMethod function takes an ostream reference as an argument, with a default value of cout. It returns an ostream reference, allowing for chained insertion operations. The const qualifier ensures that the method does not modify any class members.
-
-- For any class that requires scanning or reading from input, the method should adhere to the following format, unless specified otherwise:
-   ```c++
-   istream& readMethod(istream& istr = cin);
-   ```
-   The readMethod function takes an istream reference as an argument, with a default value of cin. It returns an istream reference, enabling chained extraction operations. This method is used to read or scan data into the class members.
-
-   These methods provide a standard interface for output and input operations, enhancing the usability and flexibility of your classes.
- 
-
-
-# Milestone 1 
 
 ## Utils Module
 The `Utils` module is a versatile component of your project. It currently includes methods for retrieving system time. In debugging mode, the system time is simulated to facilitate testing and development.
@@ -228,7 +37,7 @@ Remember to refer to the comments within the module for a deeper understanding o
 
 ## Startup
 
-To initiate the project, we will develop two modules: `Time` and `Menu`. The `Time` module will manage the progression of time and add timestamps to appointment tickets. The `Menu` module drives the main user interface of the application.
+To initiate the project, I will develop two modules: `Time` and `Menu`. The `Time` module will manage the progression of time and add timestamps to appointment tickets. The `Menu` module drives the main user interface of the application.
 
 ## Time Module
 The first step in tracking time for issued tickets is to implement a Time class.
@@ -238,7 +47,7 @@ The `Time` class is designed to:
 - Measure the passage of time.
 - Calculate the estimated wait time.
 
-The `Time` module stores time solely in minutes (one attribute for minutes). However, it displays and reads time in the `HH:MM` format. For instance, if the `Time` object holds the value ***125***, it will display as ***02:05***. Similarly, if the time ***13:55*** is read by the Time object from istream, it stores ***835*** in the object (i.e., 13x60+55). Note that the `Time` object can also be used to measure the passage of time, and there is no limit to the number of minutes it can hold. It can exceed 24 hours if necessary.
+The `Time` module stores time solely in minutes (one attribute for minutes). HoIver, it displays and reads time in the `HH:MM` format. For instance, if the `Time` object holds the value ***125***, it will display as ***02:05***. Similarly, if the time ***13:55*** is read by the Time object from istream, it stores ***835*** in the object (i.e., 13x60+55). Note that the `Time` object can also be used to measure the passage of time, and there is no limit to the number of minutes it can hold. It can exceed 24 hours if necessary.
 
 > Note: ***125:15*** is a valid time that represents 125 hours and 15 minutes. Also, ***0:96*** is a valid entry and it is displayed as ***01:36***, which is ***1*** hour and ***36*** minutes.
 
@@ -294,7 +103,7 @@ This operator overloads the multiplication assignment `*=` for the `Time` class.
 Time& operator-= (const Time& D);
 ```
 
-This operator overloads the subtraction assignment `-=` for the `Time` class. It calculates the time difference between the current Time object and the Time object `D` passed as an argument. Note that the difference can never be a negative value. If the result would be negative, it adds 24 hours (or 1440 minutes) to ensure the result is positive. Here are some examples:
+This operator overloads the subtraction assignment `-=` for the `Time` class. It calculates the time difference betIen the current Time object and the Time object `D` passed as an argument. Note that the difference can never be a negative value. If the result would be negative, it adds 24 hours (or 1440 minutes) to ensure the result is positive. Here are some examples:
 
 - `23:00 -= 9:00` results in `14:00`.
 - `18:00 -= 16:00` results in `2:00`.
@@ -308,7 +117,7 @@ Time operator-(const Time& T)const;
 ```
 This operator performs the same calculation as the subtraction assignment `-=` overload, except that it does not have a side effect (i.e., it does not modify the current object).
 
-It returns a new `Time` object representing the time difference between the current `Time` object and the `Time` object `T`.
+It returns a new `Time` object representing the time difference betIen the current `Time` object and the `Time` object `T`.
 
 ### Helper Insertion and Extraction Overloads
 
@@ -394,7 +203,7 @@ In the second example, each line of the menu is indented by six spaces (two tabs
 int& operator>>(int& Selection);
 ```
 The member insertion operator first calls the display function and then receives the user's selection as an integer value. The integer reference **selection** argument is then set to this value and returned.<br />
-Make sure that the entered value is validated as an integer (with no trailing characters) and also the value should be between 0 and the **number of options** in the menu.<br />
+Make sure that the entered value is validated as an integer (with no trailing characters) and also the value should be betIen 0 and the **number of options** in the menu.<br />
 If the above conditions are not met, a proper error message should be displayed and re-entry requested(see below)
 
 Assuming that the menu content is set to:```"Tester Options menu:\n1- Option one\n2- Option two\n3- Option three"``` , (hence the number of selections will 3) the **operator>>** should run like this:
@@ -412,57 +221,10 @@ Invalid value enterd, retry[0 <= value <= 3]: 2
 ```
 `2` is returned as user's selection.
 
-## Menu Tester
-[menuTester.cpp](ms1/menuTester.cpp)
-
-## MS1 Submission 
-> If you would like to successfully complete the project and be on time, **start early** and try to meet all the due dates of the milestones.
-
-### MS1 Tester Progtram
-
-[main.cpp](ms1/main.cpp)
-
-### MS1 Expected Output
-
-[correct_output.txt](ms1/correct_output.txt)
-
-### Submission
-
-Upload your source code and the tester program to your `matrix` account. Compile and run your code using the `g++` compiler [as shown in the introduction](#compiling-and-testing-your-program) and make sure that everything works properly.
-
-Then, run the following command from your account (replace `profname.proflastname` with your professor’s Seneca userid):
-```
-~profname.proflastname/submit 2??/prj/m?
-```
-and follow the instructions.
-
-- *2??* is replaced with your subject code
-- *m?* is replaceed with the milestone name (i.e. m1, m2, etc...)
-
-### The submit program's options:
-```bash
-~prof_name.prof_lastname/submit DeliverableName [-submission options]<ENTER>
-[-submission option] acceptable values:
-  "-due":
-       Shows due dates only
-       This option cannot be used in combination with any other option.
-  "-skip_spaces":
-       Do the submission regardless of incorrect horizontal spacing.
-       This option may attract penalty.
-  "-skip_blank_lines":
-       Do the submission regardless of incorrect vertical spacing.
-       This option may attract penalty.
-  "-feedback":
-       Check the program execution without submission.
-```
-
-## [Back to milestones](#milestones)
-# Milestone 2  
 
 ## IOAble interface module
 
-In milestone 1 we have created the utility classes needed to have the menu selection and Time display and calculations.<br />
-Now we need to create the core classes of the application.  The diagram below displays the core classes of the application and their relationship.
+The core classes of the application.  The diagram below displays the core classes of the application and their relationship.
 
 ![Classes](images/classes.png)
 
@@ -486,48 +248,6 @@ Overload the insertion operator to be able to insert the information of an IOAbl
 ### operator>>
 Overload the extraction operator to be able to extract information from an istream into an IOAble object using the IOAble::read function.
 
-## The tester program.
-Read and study the tester program and understand how it works.  It is a very good example to show how an interface is used as a base class.  It also can help you in the development of the upcoming milestones.
-
-[main.cpp](ms2/main.cpp)
-
-### MS2 Expected Output
-
-[correct_output.txt](./ms2/correct_output.txt)
-
-### Submission
-
-Upload your source code and the tester program to your `matrix` account. Compile and run your code using the `g++` compiler [as shown in the introduction](#compiling-and-testing-your-program) and make sure that everything works properly.
-
-Then, run the following command from your account (replace `profname.proflastname` with your professor’s Seneca userid):
-```
-~profname.proflastname/submit 2??/prj/m?
-```
-and follow the instructions.
-
-- *2??* is replaced with your subject code
-- *m?* is replaced with the milestone (i.e. m1, m2, etc)
-
-### The submit program's options:
-```bash
-~prof_name.prof_lastname/submit DeliverableName [-submission options]<ENTER>
-[-submission option] acceptable values:
-  "-due":
-       Shows due dates only
-       This option cannot be used in combination with any other option.
-  "-skip_spaces":
-       Do the submission regardless of incorrect horizontal spacing.
-       This option may attract penalty.
-  "-skip_blank_lines":
-       Do the submission regardless of incorrect vertical spacing.
-       This option may attract penalty.
-  "-feedback":
-       Check the program execution without submission.
-```
-
-## [Back to milestones](#milestones)
-
-# Milestone 3
 
 ## The Ticket Module (implementation provided)
 
@@ -596,7 +316,7 @@ The `Patient` class must include the following member variables and objects:
 #### Patient name
 A dynamically allocated C-string, represented by a character pointer variable, is used to store the patient’s name. This allows for names of varying lengths to be stored efficiently. 
 
-> While the memory for the name attribute is dynamically allocated, we will operate under the assumption that a `Patient`'s name will not exceed 50 characters in length. If the input provided for the name attribute surpasses 50 characters, it should be silently truncated to the first 50 characters. This truncation should occur without raising any errors. This approach ensures that our program can handle a variety of input lengths while maintaining a consistent data structure size for the name attribute.
+> While the memory for the name attribute is dynamically allocated, I will operate under the assumption that a `Patient`'s name will not exceed 50 characters in length. If the input provided for the name attribute surpasses 50 characters, it should be silently truncated to the first 50 characters. This truncation should occur without raising any errors. This approach ensures that our program can handle a variety of input lengths while maintaining a consistent data structure size for the name attribute.
 
 #### OHIP number
 An integer attruibute is used to store the patient’s OHIP (Ontario Health Insurance Plan) number. This number should consist of exactly 9 digits, reflecting the standard format of OHIP numbers.
@@ -702,7 +422,7 @@ If the information is being extracted from `cin` (user input over the console), 
 - Copy the extracted name into dynamically allocated memory pointed by the name member variable, ensuring the name pointer is deleted before the allocation to prevent memory leaks.
 - Extract and ignore all characters up to and including the newline character.
 - Display the prompt: "OHIP: ".
-- Extract a 9-digit OHIP number from the istream. Validate it, ensuring it is between 100000000 and 999999999. Use the same error message format as the Menu item selection.
+- Extract a 9-digit OHIP number from the istream. Validate it, ensuring it is betIen 100000000 and 999999999. Use the same error message format as the Menu item selection.
 - Return the istream reference at the end.
 
 Execution example:
@@ -726,48 +446,7 @@ If the information is **not** being extracted from `cin`, presuming it is being 
 If, in any case, the istream fails to read the information, ensure that any dynamically allocated memory held by the name attribute is deleted, and the pointer is set to nullptr.
 
 
-
-## The tester program.
-[main.cpp](ms3/main.cpp) 
-
-## Correct output
-[correct_output.txt](ms3/correct_output.txt)
-
-
-### Submission
-
-Upload your source code and the tester program to your `matrix` account. Compile and run your code using the `g++` compiler [as shown in the introduction](#compiling-and-testing-your-program) and make sure that everything works properly.
-
-Then, run the following command from your account (replace `profname.proflastname` with your professor’s Seneca userid):
-```
-~profname.proflastname/submit 2??/prj/m?
-```
-and follow the instructions.
-
-- *2??* is replaced with your subject code
-- *m?* is replaced with the milestone (i.e. m1, m2, etc)
-
-### The submit program's options:
-```bash
-~prof_name.prof_lastname/submit DeliverableName [-submission options]<ENTER>
-[-submission option] acceptable values:
-  "-due":
-       Shows due dates only
-       This option cannot be used in combination with any other option.
-  "-skip_spaces":
-       Do the submission regardless of incorrect horizontal spacing.
-       This option may attract penalty.
-  "-skip_blank_lines":
-       Do the submission regardless of incorrect vertical spacing.
-       This option may attract penalty.
-  "-feedback":
-       Check the program execution without submission.
-```
-
-
-# Milestone 4
-
-Advance the development of the Pre-triage application by incorporating the `test patient` and `triage patien` modules into the system.
+## Advance the development of the Pre-triage application by incorporating the `test patient` and `triage patien` modules into the system.
 
 ## The TestPatient module
 This module has one integer global variable called **nextTestTicket** that is initialized to **one**.  This global variable will be used to determine what is the ticket number of the next contagion test Patient.  Each time a new **TestPatient** object is created the value of the **nextTestTicket** will be increased by **one**.  The scope of the global **nextTestTicket** variable is only the **TestPatient** module.
@@ -799,9 +478,6 @@ Then it will return the **istream** reference.
 ### Destructor
 This class does not need a custom destructor.
 
-### TestPatient tester and output
-[TstP_Tester.cpp](ms4/TstP_Tester.cpp)
-
 ## The TriagePatient Module
 This module includes a single integer global variable called `nextTriageTicket` initialized to `one`. This global variable determines the ticket number of the next triage Patient. Each time a new TriagePatient is created, the value of `nextTriageTicket` increases by one. The scope of the global `nextTriageTicket` variable is limited to the `TriagePatient` module.
 
@@ -810,7 +486,7 @@ The `TriagePatient` class is publicly derived from the `Patient` class. The `Tri
 The `TriagePatient` class includes a default constructor, implements the pure virtual type() function, and re-implements the two read and write virtual functions of the base class `Patient`. It adheres to the rule of three in derived classes to properly manage the dynamically allocated memory of the class and the base class during copying and assignment.
 
 ### Symptoms Character Pointer Member Variable
-Create a character pointer member variable to point to a dynamically allocated Cstring holding the list of symptoms of the `TriagePatient`. Although this characters Cstring is held dynamically but we will make sure it will not be more than 512 character. In such case where the lenght of the data exceeds 512, the data will be truncated and the rest of it will be silently ingnored. 
+Create a character pointer member variable to point to a dynamically allocated Cstring holding the list of symptoms of the `TriagePatient`. Although this characters Cstring is held dynamically but I will make sure it will not be more than 512 character. In such case where the lenght of the data exceeds 512, the data will be truncated and the rest of it will be silently ingnored. 
 
 
 ### Default Constructor
@@ -862,68 +538,6 @@ The function concludes by returning the istream reference.
 
 ### Destructor
 Deletes the memory pointed by the [symptoms member variable](#symptoms-character-pointer-member-variable)
-
-## The TriagePatient Tester and output
-
-[TrgP_Tester.cpp](ms4/TrgPTester.cpp)
-
-
-## Milestone 4  tester program.
-
-[main.cpp](ms4/main.cpp)
-
-
-## Correct output
-
-[correct_output.txt](ms4/correct_output.txt)
-
-
-### Submission
-
-Upload your source code and the tester program to your `matrix` account. Compile and run your code using the `g++` compiler [as shown in the introduction](#compiling-and-testing-your-program) and make sure that everything works properly.
-
-Then, run the following command from your account (replace `profname.proflastname` with your professor’s Seneca userid):
-```
-~profname.proflastname/submit 2??/prj/m?
-```
-and follow the instructions.
-
-- *2??* is replaced with your subject code
-- *m?* is replaced with the milestone (i.e. m1, m2, etc)
-
-### The submit program's options:
-```bash
-~prof_name.prof_lastname/submit DeliverableName [-submission options]<ENTER>
-[-submission option] acceptable values:
-  "-due":
-       Shows due dates only
-       This option cannot be used in combination with any other option.
-  "-skip_spaces":
-       Do the submission regardless of incorrect horizontal spacing.
-       This option may attract penalty.
-  "-skip_blank_lines":
-       Do the submission regardless of incorrect vertical spacing.
-       This option may attract penalty.
-  "-feedback":
-       Check the program execution without submission.
-```
-
-
-# Milestone 5 
-
-To start milestone 5, first, add the following template to **uitls.h**
-
-```c++
-   template <typename type>
-   void removeDynamicElement(type* array[], int index, int& size) {
-      delete array[index];
-      for (int j = index; j < size; j++) {
-         array[j] = array[j + 1];
-      }
-      size--;
-   }
-```
-This template will be used to remove a Patient from the lineup when admitted.
 
 ## PreTriage Module
 
@@ -979,7 +593,7 @@ General Healthcare Facility Pre-Triage Application
 0- Exit
 > 0
 Saving lineup...
-7 Contagion Tests and 9 Triage records were saved!
+7 Contagion Tests and 9 Triage records Ire saved!
 ```
 ## PreTriage constant maximum lineup value
 ### Maximum Number of patients
@@ -1007,7 +621,7 @@ The constructor then loads all the data from the data file, if possible.
 ### Destructor
 - Saves the data. 
 - Iterates through the patient lineup and deletes the elements one by one.
-- If there are any other dynamically allocated memory, it will delete them as well. 
+- If there are any other dynamically allocated memory, it will delete them as Ill. 
 
 ### Private Methods
 
@@ -1068,7 +682,7 @@ end loop
 ```text
 Warning: number of records exceeded 100
 ```
-- if no records were read print `"No data or bad data file!"` otherwise, print `"###  Records imported..."` (### is replaced with the number of records read)
+- if no records Ire read print `"No data or bad data file!"` otherwise, print `"###  Records imported..."` (### is replaced with the number of records read)
 
 - Examples:
 ```text
@@ -1179,9 +793,7 @@ Row - Patient name                                          OHIP     Tk #  Time
 ```
 
 ### Public method
-The following is the only mandatory method of the Pre-Triage class. 
-
-You are free to implement all the other PreTraige methods, any way you find fit as long as the run method functions exactly as requested.
+The following is the member of the Pre-Triage class. 
 
 #### run (Modifier)
 Runs the PreTriage main application.
@@ -1205,212 +817,5 @@ And get the user's selection.
 
 
 
-### Submission
 
-Upload your source code and the tester program to your `matrix` account. Compile and run your code using the `g++` compiler [as shown in the introduction](#compiling-and-testing-your-program) and make sure that everything works properly.
-
-Then, run the following command from your account (replace `profname.proflastname` with your professor’s Seneca userid):
-```
-~profname.proflastname/submit 2??/prj/m??
-```
-and follow the instructions.
-
-- *2??* is replaced with your subject code
-- *m??* is replaceed with the milestone5 stages (i.e. m51, m52, etc...)
-
-### The submit program's options:
-```bash
-~prof_name.prof_lastname/submit DeliverableName [-submission options]<ENTER>
-[-submission option] acceptable values:
-  "-due":
-       Shows due dates only
-       This option cannot be used in combination with any other option.
-  "-skip_spaces":
-       Do the submission regardless of incorrect horizontal spacing.
-       This option may attract a penalty.
-  "-skip_blank_lines":
-       Do the submission regardless of incorrect vertical spacing.
-       This option may attract a penalty.
-  "-feedback":
-       Check the program execution without submission.
-```
-#### common files to submit for all MS5 submissions
-```text
-Utils.h
-Utils.cpp
-IOAble.cpp                                 
-IOAble.h                         
-Menu.cpp
-Menu.h
-Time.cpp
-Time.h
-Ticket.cpp
-Ticket.h
-Patient.cpp
-Patient.h
-TestPatient.cpp
-TestPatient.h
-TriagePatient.cpp
-TriagePatient.h
-PreTriage.cpp
-PreTriage.h
-```
-
-## Milestone 5.1  
-> This milestone is mandatory to submit.
-### Reflection
-
-As part of your project submission in milestone 5.1, we would like you to reflect on your experience working on the “General Healthcare Facility Pre-Triage Application”, in two or three paragraphs.  Please consider the following points:
-
-- Learnings:
-What new concepts or skills did you acquire during this project?
-How did your understanding of C evolve into C++, especially in terms of object orientation?    
-- Challenges:
-What were the most significant challenges you encountered while developing the application?
-How did you overcome these challenges, and what strategies did you employ?
-Feel free to share any insights, lessons learned, or personal growth you experienced throughout the project. Your reflections will provide valuable feedback and contribute to your overall learning journey.
-
-Thank you for your hard work, and we look forward to reading your thoughtful reflections!
-
-### Load, Save and exit test
-#### Files to add for MS5.1 submission
-```text
-ms51_test.cpp            
-reflect.txt
-```
-#### Data Entry
-```text
-0
-0
-0
-```
-#### Tester Program
-[ms51_test.cpp](ms5/ms51_test.cpp)
-
-#### Expected Output
-[ms51_correct_output.txt](ms5/ms51_correct_output.txt)
-
-## Milestone 5.2
-
-### List Patients in the lineup
-
-#### Files to add for MS5.2 submission
-```text
-ms52_test.cpp        
-```
-#### Data Entry
-```text
-3
-1
-3
-2
-0
-```
-#### Tester Program
-[ms52_test.cpp](ms5/ms52_test.cpp)
-
-#### Expected Output
-[ms52_correct_output.txt](ms5/ms52_correct_output.txt)
-
-
-## Milestone 5.3
-
-### Admit Test Patients
-
-#### Files to add for MS5.3 submission
-```text
-ms53_test.cpp        
-```
-#### Data Entry
-```text
-2
-1
-2
-1
-0
-```
-#### Tester Program
-[ms53_test.cpp](ms5/ms53_test.cpp)
-
-#### Expected Output
-[ms53_correct_output.txt](ms5/ms53_correct_output.txt)
-
-
-## Milestone 5.4
-
-### Admit Triage Patients
-
-#### Files to add for MS5.4 submission
-```text
-ms54_test.cpp        
-```
-#### Data Entry
-```text
-2
-2
-2
-2
-0
-```
-#### Tester Program
-[ms54_test.cpp](ms5/ms54_test.cpp)
-
-#### Expected Output
-[ms54_correct_output.txt](ms5/ms54_correct_output.txt)
-
-## Milestone 5.5
-
-### Register Test Patients
-
-#### Files to add for MS5.5 submission
-```text
-ms55_test.cpp        
-```
-#### Data Entry
-```text
-1
-1
-John Doe
-123123123
-1
-1
-Jane Doe
-234234234
-0
-```
-#### Tester Program
-[ms55_test.cpp](ms5/ms55_test.cpp)
-
-#### Expected Output
-[ms55_correct_output.txt](ms5/ms55_correct_output.txt)
-
-## Milestone 5.6
-
-### Register Triage Patients
-
-#### Files to add for MS5.6 submission
-```text
-ms56_test.cpp        
-```
-#### Data Entry
-```text
-1
-0
-1
-2
-John Doe
-123123123
-Stomach pain
-1
-2
-Jane Doe
-234234234
-Abdomen pain
-0
-```
-#### Tester Program
-[ms56_test.cpp](ms5/ms56_test.cpp)
-
-#### Expected Output
-[ms56_correct_output.txt](ms5/ms56_correct_output.txt)
 
