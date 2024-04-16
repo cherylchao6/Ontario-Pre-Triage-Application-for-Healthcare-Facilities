@@ -281,29 +281,8 @@ Overload the extraction operator to be able to extract information from an istre
 
 ## The Ticket Module (implementation provided)
 
-The Ticket class encapsulates a Ticket to be given to the patients when they arrive. Read the code, understand it, and use the logic and the functionalities throughout the project. 
+The Ticket class encapsulates a Ticket to be given to the patients when they arrive.
 
-```c++
-#ifndef SENECA_TICKET_H_
-#define SENECA_TICKET_H_
-#include <iostream>
-#include "Time.h"
-#include "IOAble.h"
-namespace seneca {
-   class Ticket:public IOAble{
-      Time m_time;
-      int m_number;
-   public:
-      Ticket(int number);
-      Time time()const;
-      int number()const;
-      void resetTime();
-      std::ostream& write(std::ostream& ostr )const;
-      std::istream& read(std::istream& istr);
-   };
-}
-#endif // !SENECA_TICKET_H_
-```
 ### Member Variables
 #### Time m_time;
 The time the Ticket was issued
